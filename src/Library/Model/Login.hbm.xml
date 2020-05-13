@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2020 1:45:47 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Library.Model.Login" table="login" schema="public" optimistic-lock="version">
+        <id name="password" type="string">
+            <column name="password" length="90" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>
